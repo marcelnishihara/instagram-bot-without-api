@@ -1,0 +1,4 @@
+credentials = {
+    'username' : '',
+    'password' : ''
+}

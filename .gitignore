@@ -1,0 +1,7 @@
+# FOLDERS
+env
+__pycache__
+
+# FILES 
+chromedriver
+*.json

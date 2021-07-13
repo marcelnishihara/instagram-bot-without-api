@@ -1,19 +1,56 @@
-# instagram-bot-without-api
+# Get Instagram Followers List
 
-*Simple instagram bot without API
+A Python script that extracts the Instagram followers and following lists from a given username.
 
-*You can save your followers list as txt format with this bot
- 
-*Only write your keys in passwordd.py and run
+## Setting the Username and Password
 
-!If your ethernet connection is slow , bot will not work. You should increase the integer in time()
+Insert into the `tools/credentials.py` file the username and password of the Instagram account you want to extract the list of following and followers, just like the example below:
 
+```py
+credentials = {
+    'username' : 'brucewayne',
+    'password' : 'selinakyle1940'
+}
+```
 
-Installations
+## ChromeDriver
 
-pip install selenium,
+Make sure to download the correct webdriver for your Operating System and Google Chrome version. Select which one is appropriate for your environment from the Google official repository, download the ZIP file, extract it and save the ChromeDrive file into `tools` folder.
 
-pip install webdriver-manager
+Then, run the commands listed in the `Preparing the Environment` section.
 
-WebDriverManager is a library which allows to automate the management of the binary drivers
-(e.g. chromedriver, geckodriver, etc.) required by Selenium WebDriver.
+## Preparing the Environment
+
+- `$ virtualenv env -p python3`
+- `$ source env/bin/activate`
+- `(env) $ pip install -r requirements.txt`
+
+## Running the Script
+
+- `(env) $ time python3.7 main.py`
+
+## Result File
+
+After successfully ran the script, you're going to see a JSON file in the root folder of this project containing an object with your following and followers list.
+
+The name of this JSON file will look like `brucewayne_1991_8_5_19h30min00s.json`, which is the Instagram username, date and time of the script execution.
+
+Its content will be something like the following example:
+
+```js
+{
+    "following" : [
+        "oswaldcobblepot",
+        "introduce_me_as_joker",
+        "selinakyle",
+        "ras_al_ghul",
+        "eddy.nigma"
+    ],
+    "followers" : [
+        "selinakyle",
+        "alfred.pennyworth",
+        "dick.grayson"
+        "commr_james_gordon"
+    ]
+}
+```
