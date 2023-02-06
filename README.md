@@ -1,6 +1,14 @@
-# Get Instagram Followers List
+# Instagram Followers List
 
 A Python script that extracts the Instagram followers and following lists from a given username.
+
+
+## Warning: Project Out-of-Date
+
+This project doesn't work anymore since Meta updated the Instagram interface for desktop systems (last quarter of 2022).  
+You can reach further information [clicking here](https://github.com/marcelnishihara/instagram-followers-list/issues/1#issue-1573126008).  
+I'm going to work on this as soon as possible.
+
 
 ## Setting the Username and Password
 
