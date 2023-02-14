@@ -1,7 +1,6 @@
 # FOLDERS
-env
 __pycache__
+env
 
 # FILES 
-chromedriver
-*.json
+chromedriver.exe
