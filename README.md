@@ -3,7 +3,14 @@
 A Python script that extracts the Instagram followers and following lists from a given username.
 
 
-## Warning
+## Warning: Project Out-of-Date
+
+This project doesn't work anymore since Meta updated the Instagram interface for desktop systems (last quarter of 2022).  
+You can reach further information [clicking here](https://github.com/marcelnishihara/instagram-followers-list/issues/1#issue-1573126008).  
+I'm going to work on this as soon as possible.
+
+
+## Warning: 2FA (Two-factor Authentication)
 
 For security reasons, make sure that your Instagram account is already set up with the 2FA (two-factor authentication), otherwise, this script won't be useful.
 
