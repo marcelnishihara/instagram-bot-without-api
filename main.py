@@ -12,14 +12,14 @@ def main() -> None:
     '''
     Function main
     '''
-    bbb = Instagram(
+    ig_session = Instagram(
         user='',
         password='')
 
-    bbb.get_paths()
-    bbb.get_instagram()
-    bbb.extract()
-    print(json.dumps(obj=bbb.list_of_users))
+    ig_session.get_paths()
+    ig_session.get_instagram()
+    ig_session.extract()
+    print(json.dumps(obj=ig_session.list_of_users))
 
 
 if __name__ == '__main__':
